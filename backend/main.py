@@ -41,7 +41,7 @@ def delete_book(book_id):
         return jsonify({"message": str(e)}), 201
 
 @app.route("/update-status/<book_id>", methods=["PUT"])
-def toggle_book(book_id):
+def update_status(book_id):
     try:
         query_db(
             """
