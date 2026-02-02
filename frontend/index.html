@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/js/app.js" defer></script>
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Book Tracker</title>
+</head>
+<body>
+    <main>
+        <div>
+            <h1>Book Tracker</h1>
+        </div>
+        <section>
+            <h2>My Collection</h2>
+            <div>   
+                <button onclick="openModal()">Add</button>
+                <button onclick="searchModal()">Search</button>
+            </div>
+            <div class="collection-box">
+                <ul id="books-collection">
+                </ul>
+            </div>
+        </section>
+
+    <div id="book-modal" class="modal">
+        <div class="modal-content">
+            <form id="add-form">
+                <h3>Adding new book into your collection</h3>
+                <label for="isbn">ISBN</label>
+                <input type="text" name="isbn" id="isbn" required>
+                <label for="title">Title</label>
+                <input type="text" name="title" id="title" required>
+                <label for="author">Author</label>
+                <input type="text" name="author" id="author" required>
+                <label for="year">Year</label>
+                <input type="text" name="year" id="year" required>
+                <div>
+                    <button id="add-btn" type="button">Add</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="search-modal" class="modal">
+        <div class="modal-content">
+            <form id="search-form">
+                <label for="search-text">Search for:</label>
+                <input type="text" name="search-text" id="search-text" required>
+                <button id="search-btn" type="button">Search</button>
+            </form>
+            <div id="search-box">
+                <ul>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    </main>
+</body>
+</html>
