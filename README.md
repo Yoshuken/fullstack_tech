@@ -1,4 +1,5 @@
 # fullstack_tech
+*Technical Challange by Shujian Yao*
 
 ## Setbacks
 I used the OpenLibray instead of the Google API because the Google API was blocking my requests from the get go. Somehow it just kept on sending 429 responses even on my first requests to the API. Not sure if it is because I've been doing something wrong or becaues in the past I've worked with this API which may have triggered a IP constraint but I've found somewhat of a workaround with another open source API. https://openlibrary.org/dev/docs/api/search
