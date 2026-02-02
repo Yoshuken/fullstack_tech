@@ -28,6 +28,7 @@ python3 main.py
 For the frontend we just need to start a localhost with the index.html, eveything else should run directly through that. For example, we can use the python http server command to the port of our chosing, that way we can set the API server and the APP on the same host
 
 ```
+cd frontend
 python3 -m http.server 5500
 ```
 
